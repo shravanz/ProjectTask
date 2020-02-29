@@ -1,5 +1,4 @@
-const Product = require("./models/Product");
-exports.filterProductByAttribute = function(arr, attr, value) {
+module.exports.filterProductByAttribute = function(arr, attr, value) {
   var i = arr.length;
   while (i--) {
     if (
