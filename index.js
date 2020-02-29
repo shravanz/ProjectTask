@@ -38,7 +38,7 @@ app.get("/getCategory/:id", (req, res) => {
   res.json(Categorys[ID]);
 });
 // Delete Category w.r.t product
-app.get("/deleteCategory/:id", (req, res) => {
+app.delete("/deleteCategory/:id", (req, res) => {
   ID = req.params.id; //index
   if (Categorys[ID].isActive) {
     helper.filterProductByAttribute(Products, "catId", ID);
